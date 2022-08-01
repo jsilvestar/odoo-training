@@ -1,0 +1,22 @@
+<odoo>
+
+   <template id="snippet_testimonial" name="Edwin">
+      <section class="snippet_testimonial" id="snippet_test">
+         <div class="container">
+            <div class="row my_snippet">
+               <p>I am snippet.</p>
+            </div>
+         </div>
+      </section>
+   </template>
+
+
+    <template id="world_snippet" inherit_id="website.snippets" name="new snippets">
+       <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+          <t t-snippet="academy.snippet_testimonial"
+             t-thumbnail="/academy/static/src/img/world.png"/>
+       </xpath>
+    </template>
+
+
+</odoo>

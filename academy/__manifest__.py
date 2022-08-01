@@ -26,8 +26,15 @@
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
+        'views/template_page_menu.xml',
         'views/templates.xml',
+        'views/snippets.xml',
     ],
+'assets': {
+        'web.assets_frontend': [
+            'academy/static/src/scss/academy.scss',
+        ],
+    },
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
