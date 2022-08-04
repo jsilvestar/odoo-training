@@ -28,11 +28,13 @@
         'views/views.xml',
         'views/template_page_menu.xml',
         'views/templates.xml',
+        'views/add_value_templates.xml',
         'views/snippets.xml',
     ],
 'assets': {
         'web.assets_frontend': [
             'academy/static/src/scss/academy.scss',
+            'academy/static/src/js/add_value.js',
         ],
     },
     # only loaded in demonstration mode

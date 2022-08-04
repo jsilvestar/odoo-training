@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- === Services Page === -->
+    <template id="add_value">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="container oe_add_value">
+
+                      <div class="form-group">
+                        <label for="add1">Number 1</label>
+                        <input type="number" class="form-control" id="add1" name="add1"  placeholder="Enter Number 1"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="add2">Number 2</label>
+                        <input type="number" class="form-control" id="add2"  name="add2" placeholder="Enter Number 2"/>
+                      </div>
+                     <div class="form-group">
+                        <label for="sum">Total</label>
+                        <input type="number" class="form-control" id="sum"  name="sum" readonly="readonly"/>
+                      </div>
+                      <button type="submit" class="btn btn-primary addValueBtn">Submit</button>
+                </div>
+            </div>
+        </t>
+    </template>
+
+</odoo>

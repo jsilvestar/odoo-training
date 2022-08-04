@@ -40,3 +40,18 @@ class Academy(http.Controller):
         AcademyObj.sudo().create(vals)
         return request.render('academy.academy_created', {})
 
+
+    # Method Used for RPC cALL
+    @http.route('/add/value', auth='public', website=True)
+    def add_value(self, **kw):
+        return request.render('academy.add_value', {})
+
+    # tHIS METHOD CALLED FROM JS AND VALUE RETURN TO JS
+    @http.route('/add/value/sum', type="json", auth='public')
+    def add_value_sum(self, **kw):
+        print ('summmmmmmmmmmmmmmmmmmmmm', kw)
+        num1 = kw.get('num1')
+        num2 = kw.get('num2')
+        sum = num1 + num2
+        return {'sum': sum}
+
